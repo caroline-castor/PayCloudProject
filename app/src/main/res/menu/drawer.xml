@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_managerProfileSection"
+            android:title="Inicio">
+            <menu>
+                <item
+                    android:id="@+id/nav_mensagens"
+                    android:checked="false"
+                    android:title="Mensagens"
+                    android:icon="@drawable/ic_msg"
+                    />
+                <item
+                    android:id="@+id/nav_geral"
+                    android:checked="false"
+                    android:title="Geral"
+                    android:icon="@drawable/ic_profile"
+                />
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_transactionSection"
+            android:title="Transações"
+            >
+            <menu>
+                <item
+                    android:id="@+id/nav_sendPayment"
+                    android:checked="false"
+                    android:title="Enviar"
+                    android:icon="@drawable/ic_dineiro"
+
+                />
+                <item
+                    android:id="@+id/nav_receivePayment"
+                    android:checked="false"
+                    android:title="Receber"
+                    android:icon="@drawable/ic_receive"
+                    />
+                <item
+                    android:id="@+id/nav_consultPayment"
+                    android:checked="false"
+                    android:title="Consultar"
+                    android:icon="@drawable/ic_consult"
+                    />
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_cardSection"
+            android:title="Cartões"
+            >
+            <menu>
+                <item
+                    android:id="@+id/nav_addCard"
+                    android:checked="false"
+                    android:title="Cadastrar"
+                    android:icon="@drawable/ic_card"
+                    />
+                <item
+                    android:id="@+id/nav_managerCard"
+                    android:checked="false"
+                    android:title="Gerenciar"
+                    android:icon="@drawable/ic_action"
+                    />
+
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_accountSection"
+            android:title="Minha Conta">
+            <menu>
+                <item
+                    android:id="@+id/nav_editarAccount"
+                    android:checked="false"
+                    android:title="Editar"
+                    android:icon="@drawable/ic_edit"
+                    />
+            </menu>
+        </item>
+
+    </group>
+</menu>

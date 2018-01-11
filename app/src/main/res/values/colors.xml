@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="PrimaryColor">#2196F3</color>
+    <color name="PrimaryDarkColor">#1976D2</color>
+    <color name="StencilRoot">#500095</color>
+    <color name="Crimson">#DC143C</color>
+    <color name="White">#FFFFFF</color>
+    <color name="MidthnightBlue">#191970</color>
+</resources>

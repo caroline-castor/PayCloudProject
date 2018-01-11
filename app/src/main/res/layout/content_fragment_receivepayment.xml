@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="300dp"
+        android:hint="Receber de ..."
+        android:layout_height="40dp"
+        android:background="@drawable/rounddededittext"
+        android:id="@+id/edtReceiveFrom"
+        android:layout_marginTop="103dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:layout_width="300dp"
+        android:hint="Valor"
+        android:inputType="numberDecimal"
+        android:layout_height="40dp"
+        android:background="@drawable/rounddededittext"
+        android:id="@+id/edtValueReceive"
+        android:layout_below="@+id/edtReceiveFrom"
+        android:layout_alignLeft="@+id/edtReceiveFrom"
+        android:layout_alignStart="@+id/edtReceiveFrom"
+        android:layout_marginTop="54dp"
+        android:layout_alignRight="@+id/btnReceive"
+        android:layout_alignEnd="@+id/btnReceive" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/edtDescriptionReceive"
+        android:hint="Descrição"
+        android:background="@drawable/rounddededittext"
+        android:layout_below="@+id/edtValueReceive"
+        android:layout_alignLeft="@+id/edtValueReceive"
+        android:layout_alignStart="@+id/edtValueReceive"
+        android:layout_marginTop="58dp"
+        android:layout_alignRight="@+id/edtReceiveFrom"
+        android:layout_alignEnd="@+id/edtReceiveFrom" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:background="@drawable/rounddedbutton"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:id="@+id/btnReceive"
+        android:layout_marginTop="68dp"
+        android:layout_below="@+id/edtDescriptionReceive"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="300dp"
+        android:hint="Enviar para ..."
+        android:layout_height="40dp"
+        android:id="@+id/edtSendTo"
+        android:background="@drawable/rounddededittext"
+        android:layout_marginTop="104dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:layout_width="300dp"
+        android:hint="Valor"
+        android:inputType="numberDecimal"
+        android:layout_height="40dp"
+        android:id="@+id/edtValueSend"
+        android:background="@drawable/rounddededittext"
+        android:layout_below="@+id/edtSendTo"
+        android:layout_alignLeft="@+id/edtSendTo"
+        android:layout_alignStart="@+id/edtSendTo"
+        android:layout_marginTop="60dp"
+        android:layout_toLeftOf="@+id/btnSend"
+        android:layout_toStartOf="@+id/btnSend" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/edtDescriptionSend"
+        android:hint="Descrição"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rounddededittext"
+        android:layout_below="@+id/edtValueSend"
+        android:layout_alignLeft="@+id/edtValueSend"
+        android:layout_alignStart="@+id/edtValueSend"
+        android:layout_alignRight="@+id/edtSendTo"
+        android:layout_alignEnd="@+id/edtSendTo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:id="@+id/btnSend"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/rounddedbutton"
+        android:layout_below="@+id/edtDescriptionSend"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

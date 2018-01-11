@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="300dp"
+        android:hint="Apelido do Cartão"
+        android:layout_height="40dp"
+        android:id="@+id/edtNicknameCard"
+        android:background="@drawable/rounddededittext"
+        android:layout_marginBottom="48dp"
+        android:layout_above="@+id/edtNumberCard"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:hint="Número do cartão"
+        android:layout_height="40dp"
+        android:id="@+id/edtNumberCard"
+        android:background="@drawable/rounddededittext"
+        android:layout_marginBottom="44dp"
+        android:layout_above="@+id/edtCsc"
+        android:layout_alignLeft="@+id/edtNicknameCard"
+        android:layout_alignStart="@+id/edtNicknameCard" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:hint="CSC"
+        android:layout_height="40dp"
+        android:id="@+id/edtCsc"
+        android:background="@drawable/rounddededittext"
+        android:layout_marginBottom="111dp"
+        android:layout_above="@+id/btnSaveCard"
+        android:layout_alignLeft="@+id/edtNumberCard"
+        android:layout_alignStart="@+id/edtNumberCard" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:id="@+id/btnSaveCard"
+        android:background="@drawable/rounddedbutton"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="82dp" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:hint="Vencimento"
+        android:layout_height="40dp"
+        android:id="@+id/edtValidData"
+        android:inputType="date"
+        android:background="@drawable/rounddededittext"
+        android:layout_below="@+id/edtNumberCard"
+        android:layout_toRightOf="@+id/edtCsc"
+        android:layout_toEndOf="@+id/edtCsc" />
+</RelativeLayout>
